@@ -42,7 +42,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/+2349031875996"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group border-2 border-yellow-400 text-yellow-400 px-8 py-4 font-bold text-lg flex items-center justify-center hover:bg-yellow-400 hover:text-gray-900 transition-all duration-300"

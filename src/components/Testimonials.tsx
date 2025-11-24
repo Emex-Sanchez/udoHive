@@ -3,8 +3,8 @@ import { Star } from 'lucide-react';
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Amara Okafor',
-      role: 'CEO, AfriMart Online',
+      name: 'Emeka Onyenwuzor',
+      role: 'CEO, CUCI energy ltd',
       company: 'E-commerce',
       text: 'udoHive transformed our entire order management system. What used to take hours now happens automatically. Our team can finally focus on growth instead of manual data entry.',
       rating: 5,
@@ -23,20 +23,7 @@ export default function Testimonials() {
       text: 'I was skeptical about automation at first, but udoHive made it so simple. Now my invoicing, payments, and client onboarding run like clockwork. Game changer for my business.',
       rating: 5,
     },
-    {
-      name: 'Chidi Nnamdi',
-      role: 'CTO, PayWave Africa',
-      company: 'Fintech',
-      text: 'Their fraud detection pipeline is incredible. Real-time monitoring of millions of transactions with AI-powered risk scoring. Technical excellence meets practical results.',
-      rating: 5,
-    },
-    {
-      name: 'Zainab Hassan',
-      role: 'Managing Partner, Heritage Legal',
-      company: 'Legal Services',
-      text: 'Document automation, client intake, and case management workflows that udoHive built have saved us countless hours. Professional, reliable, and truly understand business needs.',
-      rating: 5,
-    },
+    
   ];
 
   return (

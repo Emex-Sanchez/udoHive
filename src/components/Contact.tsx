@@ -107,7 +107,7 @@ export default function Contact() {
                       href="mailto:hello@udohive.com"
                       className="text-gray-300 hover:text-yellow-400 transition-colors"
                     >
-                      hello@udohive.com
+                      udohive@gmail.com
                     </a>
                   </div>
                 </div>
@@ -117,10 +117,10 @@ export default function Contact() {
                   <div>
                     <div className="font-semibold text-white mb-1">Phone</div>
                     <a
-                      href="tel:+1234567890"
+                      href="tel:+2349031875996"
                       className="text-gray-300 hover:text-yellow-400 transition-colors"
                     >
-                      +1 (234) 567-890
+                      +234-90-3187-5996
                     </a>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ export default function Contact() {
                   <div>
                     <div className="font-semibold text-white mb-1">Location</div>
                     <p className="text-gray-300">
-                      Lagos, Nigeria
+                      Abuja, Nigeria
                       <br />
                       Remote Operations Worldwide
                     </p>

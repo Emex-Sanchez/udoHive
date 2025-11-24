@@ -1,4 +1,4 @@
-import { Check, ArrowRight, Globe } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Pricing() {
@@ -16,7 +16,7 @@ export default function Pricing() {
   const tiers = [
     {
       name: 'Starter',
-      priceUSD: 30,
+      priceUSD: 25,
       period: 'per month',
       description: 'Perfect for small businesses getting started with automation',
       setupFeeUSD: 800,
@@ -34,7 +34,7 @@ export default function Pricing() {
     },
     {
       name: 'Growth',
-      priceUSD: 99,
+      priceUSD: 50,
       period: 'per month',
       description: 'For growing businesses ready to scale with advanced automation',
       setupFeeUSD: 1500,

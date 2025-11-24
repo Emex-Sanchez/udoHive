@@ -6,7 +6,7 @@ import Portfolio from './components/Portfolio';
 import TechStack from './components/TechStack';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
-import Blog from './components/Blog';
+// import Blog from './components/Blog';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -24,7 +24,7 @@ function App() {
         <TechStack />
         <Testimonials />
         <Pricing />
-        <Blog />
+        {/* <Blog /> */}
         <FAQ />
         <Contact />
         <WhatsAppButton />
