@@ -32,7 +32,7 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-5 pointer-events-none -z-10">
         <AfricanPattern />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -70,7 +70,7 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 relative z-40">
           <div className="px-4 py-6 space-y-4">
             {navLinks.map((link) => (
               <a
