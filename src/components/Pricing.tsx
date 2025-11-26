@@ -13,65 +13,69 @@ export default function Pricing() {
     return `₦${Math.round(usdPrice * exchangeRate).toLocaleString()}`;
   };
 
-  const tiers = [
-    {
-      name: 'Starter',
-      priceUSD: 25,
-      period: 'per month',
-      description: 'Perfect for small businesses getting started with automation',
-      setupFeeUSD: 800,
-      features: [
-        'Up to 3 automated workflows',
-        'Basic n8n setup & configuration',
-        'Standard integrations (5 apps)',
-        'Email & chat support',
-        'Monthly maintenance & monitoring',
-        'Documentation & training',
-        'Quarterly optimization review',
-      ],
-      cta: 'Get Started',
-      highlight: false,
-    },
-    {
-      name: 'Growth',
-      priceUSD: 50,
-      period: 'per month',
-      description: 'For growing businesses ready to scale with advanced automation',
-      setupFeeUSD: 1500,
-      features: [
-        'Up to 10 automated workflows',
-        'Advanced n8n workflows',
-        'Unlimited integrations',
-        'AI agent development',
-        'Priority support (24-hour response)',
-        'Monthly maintenance & optimization',
-        'Custom dashboard & reporting',
-        'Bi-weekly strategy calls',
-      ],
-      cta: 'Start Growing',
-      highlight: true,
-    },
-    {
-      name: 'Enterprise',
-      priceUSD: null,
-      period: 'per month',
-      description: 'Full-scale automation infrastructure for large operations',
-      setupFeeUSD: null,
-      features: [
-        'Unlimited workflows',
-        'Custom AI solutions',
-        'Dedicated automation engineer',
-        'Advanced analytics & reporting',
-        '24/7 priority support',
-        'Continuous monitoring & maintenance',
-        'Performance monitoring & scaling',
-        'Weekly strategy sessions',
-        'White-glove onboarding & support',
-      ],
-      cta: 'Contact Sales',
-      highlight: false,
-    },
-  ];
+ const tiers = [
+  {
+    name: 'Starter',
+    setupFeeUSD: 800,
+    subscriptionUSD: 200, // yearly renewal
+    priceUSD: null,
+    period: 'one time setup',
+    description: 'Ideal for businesses that need a simple automation system with annual hosting & maintenance.',
+    features: [
+      'Single workflow ',
+      '1-year hosting included',
+      '1-year maintenance included',
+      'Basic support',
+      'Fast delivery (3–7 days)',
+      'Run-it-yourself option available',
+      'Optional yearly renewal: $200/year'
+    ],
+    cta: 'Get Started',
+    highlight: false,
+  },
+  {
+    name: 'Growth',
+    setupFeeUSD: 1500,
+    subscriptionUSD: 400, // yearly renewal
+    priceUSD: null,
+    period: 'one time setup',
+    description: 'Perfect for growing businesses that need multiple workflows with deeper automation.',
+    features: [
+      'Up to 3 workflows',
+      'Advanced automation setup',
+      'API & external service integrations',
+      '1-year hosting & maintenance included',
+      'Monthly optimization checks',
+      'Priority support',
+      'Delivery in 7–14 days',
+      'Optional yearly renewal: $400/year'
+    ],
+    cta: 'Start Growing',
+    highlight: true,
+  },
+  {
+    name: 'Business',
+    setupFeeUSD: 3000,
+    subscriptionUSD: 900, // yearly renewal
+    priceUSD: null,
+    period: 'one time setup',
+    description: 'A comprehensive automation package built for companies with complex, multi-workflow operations.',
+    features: [
+      'Up to 6 workflows',
+      'Complex API integrations',
+      'Full automation mapping',
+      '1-year hosting & maintenance included',
+      '24/7 support line',
+      'Monthly optimization & performance review',
+      'Documentation & team training',
+      'Delivery in 14–30 days',
+      'Optional yearly renewal: $900/year'
+    ],
+    cta: 'Contact Sales',
+    highlight: false,
+  }
+];
+
 
   return (
     <section id="pricing" className="py-24 bg-gray-50 dark:bg-black">
@@ -136,7 +140,7 @@ export default function Pricing() {
 
               <div className="mb-2">
                 <span className="text-4xl font-bold text-gray-900 dark:text-white">
-                  {tier.priceUSD !== null ? formatPrice(tier.priceUSD) : 'Custom'}
+                 {formatPrice(tier.setupFeeUSD)}
                 </span>
                 <span className="text-gray-600 dark:text-gray-400 ml-2">
                   {tier.period}
@@ -145,9 +149,30 @@ export default function Pricing() {
 
               <div className="mb-6 pb-6 border-b border-gray-200 dark:border-gray-800">
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  {tier.setupFeeUSD !== null ? `${formatPrice(tier.setupFeeUSD)} one-time setup` : 'Custom setup included'}
-                </p>
+                  Hosting: {formatPrice(tier.subscriptionUSD)} / year
+                    </p>
               </div>
+
+
+{/* 
+<div className="mb-2">
+  <span className="text-4xl font-bold text-gray-900 dark:text-white">
+    {formatPrice(tier.setupFeeUSD)}
+  </span>
+  <span className="text-gray-600 dark:text-gray-400 ml-2 text-lg">
+    one-time setup
+  </span>
+</div>
+<div className="mb-6 pb-6 border-b border-gray-200 dark:border-gray-800">
+  <p className="text-sm text-gray-500 dark:text-gray-400 font-semibold">
+    Yearly renewal: {formatPrice(tier.subscriptionUSD)} / year
+  </p>
+</div> */}
+
+
+
+
+
 
               <p className="text-gray-600 dark:text-gray-300 mb-6">
                 {tier.description}
