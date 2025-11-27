@@ -16,8 +16,8 @@ export default function Pricing() {
  const tiers = [
   {
     name: 'Starter',
-    setupFeeUSD: 800,
-    subscriptionUSD: 200, // yearly renewal
+    setupFeeUSD: 500,
+    subscriptionUSD: 50, // yearly renewal
     priceUSD: null,
     period: 'one time setup',
     description: 'Ideal for businesses that need a simple automation system with annual hosting & maintenance.',
@@ -35,8 +35,8 @@ export default function Pricing() {
   },
   {
     name: 'Growth',
-    setupFeeUSD: 1500,
-    subscriptionUSD: 400, // yearly renewal
+    setupFeeUSD: 1000,
+    subscriptionUSD: 200, // yearly renewal
     priceUSD: null,
     period: 'one time setup',
     description: 'Perfect for growing businesses that need multiple workflows with deeper automation.',
@@ -55,8 +55,8 @@ export default function Pricing() {
   },
   {
     name: 'Business',
-    setupFeeUSD: 3000,
-    subscriptionUSD: 900, // yearly renewal
+    setupFeeUSD: 2000,
+    subscriptionUSD: 400, // yearly renewal
     priceUSD: null,
     period: 'one time setup',
     description: 'A comprehensive automation package built for companies with complex, multi-workflow operations.',

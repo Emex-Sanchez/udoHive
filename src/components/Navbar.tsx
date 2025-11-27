@@ -20,6 +20,7 @@ export default function Navbar() {
     { href: '#services', label: 'Services' },
     { href: '#portfolio', label: 'Portfolio' },
     { href: '#pricing', label: 'Pricing' },
+    // { href: '#ai-agents', label: 'Products' },
     { href: '#faq', label: 'FAQ' },
     { href: '#contact', label: 'Contact' },
   ];
