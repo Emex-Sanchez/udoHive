@@ -39,12 +39,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-yellow-400 flex items-center justify-center font-bold text-gray-900 text-xl">
-              U
-            </div>
-            <span className="text-2xl font-bold text-gray-900 dark:text-white">
-              udoHive
-            </span>
+            <img 
+              src="\src\logo\udohive white.png" // replace with your logo path
+              alt="udoHive Logo" 
+              className="h-10 w-auto" 
+            />
           </div>
 
           <div className="hidden md:flex items-center space-x-8">

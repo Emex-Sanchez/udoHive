@@ -16,60 +16,53 @@ export default function Pricing() {
  const tiers = [
   {
     name: 'Starter',
-    setupFeeUSD: 500,
-    subscriptionUSD: 50, // yearly renewal
-    priceUSD: null,
-    period: 'one time setup',
-    description: 'Ideal for businesses that need a simple automation system with annual hosting & maintenance.',
+    setupFeeUSD: 400,
+    subscriptionUSD: 5, // monthly renewal
+    period: 'one-time setup',
+    description: 'Ideal for small businesses or individuals needing simple automations with annual hosting & maintenance.',
     features: [
-      'Single workflow ',
-      '1-year hosting included',
-      '1-year maintenance included',
+      'Simple automation',
+      '3-month hosting & maintenance included',
       'Basic support',
       'Fast delivery (3–7 days)',
-      'Run-it-yourself option available',
-      'Optional yearly renewal: $200/year'
+      'Optional monthly renewal: $5/month'
     ],
     cta: 'Get Started',
     highlight: false,
   },
   {
     name: 'Growth',
-    setupFeeUSD: 1000,
-    subscriptionUSD: 200, // yearly renewal
-    priceUSD: null,
-    period: 'one time setup',
-    description: 'Perfect for growing businesses that need multiple workflows with deeper automation.',
+    setupFeeUSD: 900,
+    subscriptionUSD: 12, // monthly renewal
+    period: 'one-time setup',
+    description: 'Perfect for growing businesses that need more advanced automations with integrations and optimizations.',
     features: [
-      'Up to 3 workflows',
-      'Advanced automation setup',
+      'Advanced automation',
       'API & external service integrations',
-      '1-year hosting & maintenance included',
+      '3-month hosting & maintenance included',
       'Monthly optimization checks',
       'Priority support',
       'Delivery in 7–14 days',
-      'Optional yearly renewal: $400/year'
+      'Optional monthly renewal: $12/month'
     ],
     cta: 'Start Growing',
     highlight: true,
   },
   {
     name: 'Business',
-    setupFeeUSD: 2000,
-    subscriptionUSD: 400, // yearly renewal
-    priceUSD: null,
-    period: 'one time setup',
-    description: 'A comprehensive automation package built for companies with complex, multi-workflow operations.',
+    setupFeeUSD: "Exclusive", // updated
+    subscriptionUSD: 20, // monthly renewal
+    period: 'custom setup',
+    description: 'A fully customized automation package for companies with complex operations, multiple integrations, and large-scale automation needs.',
     features: [
-      'Up to 6 workflows',
-      'Complex API integrations',
-      'Full automation mapping',
-      '1-year hosting & maintenance included',
+      'Complex automation',
+      'Full automation mapping and process optimization',
+      'Complex API & system integrations',
+      '3-month hosting & maintenance included',
       '24/7 support line',
-      'Monthly optimization & performance review',
       'Documentation & team training',
-      'Delivery in 14–30 days',
-      'Optional yearly renewal: $900/year'
+      'Delivery in 14–30+ days',
+      'Optional monthly renewal: $20+/month'
     ],
     cta: 'Contact Sales',
     highlight: false,
@@ -140,7 +133,9 @@ export default function Pricing() {
 
               <div className="mb-2">
                 <span className="text-4xl font-bold text-gray-900 dark:text-white">
-                 {formatPrice(tier.setupFeeUSD)}
+                  {typeof tier.setupFeeUSD === 'number'
+                    ? formatPrice(tier.setupFeeUSD)
+                    : tier.setupFeeUSD}
                 </span>
                 <span className="text-gray-600 dark:text-gray-400 ml-2">
                   {tier.period}
@@ -149,30 +144,9 @@ export default function Pricing() {
 
               <div className="mb-6 pb-6 border-b border-gray-200 dark:border-gray-800">
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Hosting: {formatPrice(tier.subscriptionUSD)} / year
+                  Hosting: {formatPrice(tier.subscriptionUSD)} / month
                     </p>
               </div>
-
-
-{/* 
-<div className="mb-2">
-  <span className="text-4xl font-bold text-gray-900 dark:text-white">
-    {formatPrice(tier.setupFeeUSD)}
-  </span>
-  <span className="text-gray-600 dark:text-gray-400 ml-2 text-lg">
-    one-time setup
-  </span>
-</div>
-<div className="mb-6 pb-6 border-b border-gray-200 dark:border-gray-800">
-  <p className="text-sm text-gray-500 dark:text-gray-400 font-semibold">
-    Yearly renewal: {formatPrice(tier.subscriptionUSD)} / year
-  </p>
-</div> */}
-
-
-
-
-
 
               <p className="text-gray-600 dark:text-gray-300 mb-6">
                 {tier.description}
