@@ -42,7 +42,7 @@ export default function Navbar() {
             <img 
               src="/logo/udohivewhite.png" // replace with your logo path
               alt="udoHive Logo" 
-              className="h-10 w-auto" 
+              className="h-6 sm:h-8 md:h-10 w-auto" 
             />
           </div>
 
