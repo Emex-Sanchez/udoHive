@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-2">
             <img 
-              src="/public/logo/udohive white.png" // replace with your logo path
+              src="/public/logo/udohivewhite.png" // replace with your logo path
               alt="udoHive Logo" 
               className="h-10 w-auto" 
             />
