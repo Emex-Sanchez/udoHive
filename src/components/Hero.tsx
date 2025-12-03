@@ -15,7 +15,7 @@ export default function Hero() {
           <div className="animate-fade-in-up">
             <div className="inline-block mb-6">
               <span className="bg-yellow-400 text-gray-900 px-4 py-2 font-bold text-sm tracking-wider">
-                AFRO-TECH AUTOMATION
+                AFRO-TECH INNOVATION
               </span>
             </div>
 
@@ -28,8 +28,9 @@ export default function Hero() {
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Transform your business with cutting-edge AI workflows and n8n-powered automation.
-              We bring African innovation to intelligent digital operations.
+              Transform your business with intelligent, fully-integrated automation systems.
+              We design custom workflow engines that run your operations smoothly, efficiently,
+              and effortlessly—powered by African excellence.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -55,15 +56,15 @@ export default function Hero() {
             <div className="mt-12 flex items-center space-x-8 text-white">
               <div>
                 <div className="text-4xl font-bold text-yellow-400">100+</div>
-                <div className="text-sm text-gray-400">Workflows Deployed</div>
+                <div className="text-sm text-gray-400">Systems Deployed</div>
               </div>
               <div>
                 <div className="text-4xl font-bold text-yellow-400">50+</div>
-                <div className="text-sm text-gray-400">Happy Clients</div>
+                <div className="text-sm text-gray-400">Businesses Served</div>
               </div>
               <div>
                 <div className="text-4xl font-bold text-yellow-400">24/7</div>
-                <div className="text-sm text-gray-400">AI Operations</div>
+                <div className="text-sm text-gray-400">Intelligent Operations</div>
               </div>
             </div>
           </div>
@@ -91,6 +92,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

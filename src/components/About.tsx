@@ -23,22 +23,23 @@ export default function About() {
             </h2>
 
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-              At udoHive, we're pioneering the future of business automation with bold African leadership
-              and cutting-edge AI technology. We believe that the next generation of workflow innovation
-              comes from diverse perspectives and fearless execution.
+              At udoHive, we are redefining business automation through bold African leadership, 
+              human-centered design, and high-performance workflow engineering. We believe the future 
+              of digital operations belongs to teams that innovate fearlessly and create solutions built 
+              for real-world impact.
             </p>
 
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              Powered by n8n and custom AI solutions, we transform complex business operations into
-              seamless automated workflows. From data pipelines to intelligent agents, we build systems
-              that work while you focus on growth.
+              We build fully-integrated automation systems that simplify complex processes, eliminate 
+              repetitive work, and keep your operations running smoothly—day and night. From intelligent 
+              workflow engines to streamlined business systems, we create solutions that scale with your growth.
             </p>
 
             <div className="grid sm:grid-cols-3 gap-6">
               <div className="text-center p-6 bg-gray-50 dark:bg-gray-800 border-l-4 border-yellow-400">
                 <Zap className="w-8 h-8 text-yellow-400 mx-auto mb-3" />
                 <h3 className="font-bold text-gray-900 dark:text-white mb-1">Fast</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Lightning-quick deployment</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Rapid deployment</p>
               </div>
 
               <div className="text-center p-6 bg-gray-50 dark:bg-gray-800 border-l-4 border-yellow-400">
@@ -50,7 +51,7 @@ export default function About() {
               <div className="text-center p-6 bg-gray-50 dark:bg-gray-800 border-l-4 border-yellow-400">
                 <Target className="w-8 h-8 text-yellow-400 mx-auto mb-3" />
                 <h3 className="font-bold text-gray-900 dark:text-white mb-1">Precise</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Custom-built solutions</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Tailored automation</p>
               </div>
             </div>
           </div>
@@ -60,8 +61,8 @@ export default function About() {
             <div className="relative bg-gray-900 dark:bg-black p-12 border-4 border-yellow-400">
               <h3 className="text-2xl font-bold text-white mb-6">Our Vision</h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                To be the leading AI automation agency showcasing African excellence in technology,
-                delivering world-class workflow solutions that empower businesses to operate smarter,
+                To be the leading automation agency showcasing African excellence in technology,
+                delivering world-class workflow systems that empower businesses to operate smarter,
                 faster, and more efficiently.
               </p>
               <div className="border-t-2 border-yellow-400 pt-6">
@@ -71,6 +72,7 @@ export default function About() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

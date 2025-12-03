@@ -3,49 +3,59 @@ import { Plus, Minus } from 'lucide-react';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-
   const faqs = [
     {
       question: 'What exactly is workflow automation?',
-      answer: 'Workflow automation uses tools like n8n to connect your business applications and automatically handle repetitive tasks. Instead of manually copying data between systems, sending emails, or processing orders, automated workflows do this instantly and accurately 24/7.',
+      answer:
+        'Workflow automation uses technology to connect your business tools and handle repetitive tasks automatically. Instead of doing routine processes manually—like sending emails, updating spreadsheets, or transferring data—automations execute them instantly and accurately in the background.',
     },
     {
       question: 'How do AI agents work?',
-      answer: 'AI agents are intelligent programs trained to handle specific tasks like customer support, data analysis, or content generation. They use natural language processing and machine learning to understand requests, make decisions, and take actions just like a human would, but faster and more consistently.',
+      answer:
+        'AI agents are intelligent systems designed to perform tasks such as customer support, data processing, or content generation. They understand natural language, make decisions, and execute actions just like a human would—only faster, more consistently, and without fatigue.',
     },
     {
-      question: 'Is n8n better than Zapier or Make?',
-      answer: 'n8n offers more flexibility, customization, and cost-effectiveness for complex workflows. Unlike subscription-based tools with execution limits, n8n can be self-hosted for unlimited operations. It also provides advanced logic, custom code support, and better data handling for enterprise needs.',
+      question: 'Is automation better than hiring more people?',
+      answer:
+        'Automation doesn’t replace your team—it empowers them. It removes repetitive work so your staff can focus on strategy, creativity, and customer experience. It’s faster, more accurate, and significantly more cost-effective than scaling purely through manpower.',
     },
     {
       question: 'How long does it take to implement automation?',
-      answer: 'Simple workflows can be deployed in 1-2 weeks. More complex systems with multiple integrations and AI agents typically take 4-8 weeks. We provide a detailed timeline after understanding your specific requirements during the free consultation.',
+      answer:
+        'Simple automations can be deployed within 1–2 weeks, while larger systems with multiple integrations typically take 4–8 weeks. After a consultation, we provide a clear timeline tailored to your business.',
     },
     {
       question: 'Will automation work with my existing tools?',
-      answer: 'Yes. n8n integrates with 400+ applications including all major business tools (Slack, Google Workspace, Salesforce, Shopify, etc.). We can also build custom integrations for proprietary systems using APIs and webhooks.',
+      answer:
+        'Yes. Modern automation connects seamlessly with CRM platforms, marketing tools, payment systems, spreadsheets, databases, and even custom in-house applications. If your system has an API or webhook, we can integrate it.',
     },
     {
       question: 'What if something breaks?',
-      answer: 'All our packages include maintenance periods with monitoring, error handling, and support. We build robust workflows with fallback mechanisms and real-time alerts. Plus, our team is available to quickly resolve any issues that arise.',
+      answer:
+        'We include monitoring, maintenance, and rapid support. Your workflows are built with safety nets such as retries, alerts, and error handling, ensuring your operations stay stable even if something goes wrong.',
     },
     {
       question: 'Do I need technical knowledge to use the automations?',
-      answer: 'No. Once deployed, automations run in the background without any technical input needed. We provide documentation and training so your team understands what is happening, but day-to-day operations are completely automatic.',
+      answer:
+        'Not at all. Once set up, everything runs automatically. We also provide documentation and training so your team understands how things work without needing technical expertise.',
     },
     {
-      question: 'How much can automation actually save?',
-      answer: 'Our clients typically see 60-90% reduction in time spent on manual tasks, 40-70% cost savings on operations, and significant improvements in accuracy and speed. The exact ROI depends on your specific workflows and business size.',
+      question: 'How much time or money can automation save?',
+      answer:
+        'Most businesses experience a 60–90% reduction in time spent on manual tasks, 40–70% savings on operational costs, and major improvements in speed, accuracy, and consistency. Your exact ROI depends on your workflow.',
     },
     {
-      question: 'Can you automate highly specific or niche processes?',
-      answer: 'Absolutely. That is where we excel. We specialize in custom automation for unique business processes. If it involves moving data, making decisions, or triggering actions, we can automate it.',
+      question: 'Can you automate specific or unique business processes?',
+      answer:
+        'Absolutely. We specialize in custom automation designed for businesses with non-standard or highly specific workflows. If the process involves data, decisions, or actions—we can automate it.',
     },
     {
       question: 'What happens after the initial setup?',
-      answer: 'After deployment, your automations run continuously. We provide ongoing maintenance, performance monitoring, and optimization as part of your package. You can also add new workflows or modify existing ones as your business evolves.',
+      answer:
+        'Your automations continue running 24/7. We provide ongoing maintenance, optimization, and support. You can also request new workflows as your business evolves.',
     },
   ];
+
 
   return (
     <section id="faq" className="py-24 bg-gray-50 dark:bg-black">

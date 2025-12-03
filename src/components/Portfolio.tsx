@@ -1,44 +1,68 @@
 import { ShoppingCart, Truck, Building2, CreditCard, ArrowRight } from 'lucide-react';
 
 export default function Portfolio() {
-  const cases = [
-    {
-      icon: ShoppingCart,
-      industry: 'E-commerce',
-      company: 'AfriMart Online',
-      problem: 'Manual order processing taking 3+ hours daily with frequent errors and delays',
-      solution: 'Built n8n workflow automating order intake, inventory sync, payment verification, and shipping coordination',
-      results: ['95% reduction in processing time', '100% order accuracy', '3x faster fulfillment'],
-      color: 'border-yellow-400',
-    },
-    {
-      icon: Truck,
-      industry: 'Logistics',
-      company: 'SwiftMove Logistics',
-      problem: 'Customer support overwhelmed with tracking inquiries, manual route planning inefficiencies',
-      solution: 'Deployed AI chatbot for instant tracking updates and automated route optimization workflows',
-      results: ['70% reduction in support tickets', '40% fuel cost savings', '24/7 customer support'],
-      color: 'border-yellow-400',
-    },
-    {
-      icon: Building2,
-      industry: 'Small Business',
-      company: 'Zenith Consulting',
-      problem: 'Invoice generation, payment reminders, and client onboarding all done manually',
-      solution: 'Integrated CRM with automated billing, payment tracking, and onboarding sequences',
-      results: ['60% faster invoicing', '90% on-time payments', '5 hours saved weekly'],
-      color: 'border-yellow-400',
-    },
-    {
-      icon: CreditCard,
-      industry: 'Fintech',
-      company: 'PayWave Africa',
-      problem: 'High-volume transaction monitoring and fraud detection requiring manual review',
-      solution: 'Built real-time data pipeline with AI fraud detection and automated risk scoring',
-      results: ['99.7% fraud detection rate', 'Real-time monitoring', 'Scalable to 10M+ txns'],
-      color: 'border-yellow-400',
-    },
-  ];
+ const cases = [
+  {
+    icon: ShoppingCart,
+    industry: 'E-commerce',
+    company: 'AfriMart Online',
+    problem:
+      'Order processing was slow, error-prone, and required over 3 hours of manual work every day.',
+    solution:
+      'Implemented a fully automated order management system handling order intake, inventory updates, payment validation, and delivery coordination.',
+    results: [
+      '95% reduction in processing time',
+      'Zero processing errors',
+      '3× faster fulfillment speed',
+    ],
+    color: 'border-yellow-400',
+  },
+  {
+    icon: Truck,
+    industry: 'Logistics',
+    company: 'SwiftMove Logistics',
+    problem:
+      'Support team was overloaded with tracking requests, and route planning required heavy manual effort.',
+    solution:
+      'Deployed an AI assistant for instant shipment updates and introduced smart automation for optimized route planning.',
+    results: [
+      '70% drop in support workload',
+      '40% savings on fuel and route costs',
+      '24/7 self-service customer support',
+    ],
+    color: 'border-yellow-400',
+  },
+  {
+    icon: Building2,
+    industry: 'Professional Services',
+    company: 'Zenith Consulting',
+    problem:
+      'Client onboarding, invoicing, and payment follow-up were all done manually, causing delays and inconsistencies.',
+    solution:
+      'Integrated their CRM with automated billing flows, onboarding sequences, and real-time payment tracking.',
+    results: [
+      '60% faster invoicing cycles',
+      '90% increase in on-time payments',
+      '5+ hours saved weekly',
+    ],
+    color: 'border-yellow-400',
+  },
+  {
+    icon: CreditCard,
+    industry: 'Fintech',
+    company: 'PayWave Africa',
+    problem:
+      'Large-scale transaction monitoring required manual review and slowed down fraud detection.',
+    solution:
+      'Built a real-time monitoring system supported by automated risk analysis and AI-powered fraud detection.',
+    results: [
+      '99.7% fraud detection accuracy',
+      'Instant transaction monitoring',
+      'Scales to 10M+ monthly transactions',
+    ],
+    color: 'border-yellow-400',
+  },
+];
 
   return (
     <section id="portfolio" className="py-24 bg-white dark:bg-gray-900">
@@ -50,9 +74,10 @@ export default function Portfolio() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 mb-6">
             Case Studies
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Real automation challenges solved with intelligent workflows
-          </p>
+         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          A showcase of how intelligent automation and AI are transforming real businesses across multiple industries.
+        </p>
+
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">

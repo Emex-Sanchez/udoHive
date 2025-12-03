@@ -1,38 +1,45 @@
 import { Workflow, Bot, Link, Database, Wrench, TrendingUp } from 'lucide-react';
 
 export default function Services() {
-  const services = [
-    {
-      icon: Workflow,
-      title: 'Workflow Automation',
-      description: 'Build custom n8n workflows that connect your tools, automate repetitive tasks, and streamline operations end-to-end.',
-    },
-    {
-      icon: Bot,
-      title: 'AI Agent Development',
-      description: 'Deploy intelligent AI agents that handle customer support, data processing, content generation, and decision-making.',
-    },
-    {
-      icon: Link,
-      title: 'System Integrations',
-      description: 'Connect your business systems seamlessly with API integrations, webhooks, and custom middleware solutions.',
-    },
-    {
-      icon: Database,
-      title: 'Data Pipeline Automation',
-      description: 'Extract, transform, and load data automatically across platforms with robust ETL pipelines and real-time syncing.',
-    },
-    {
-      icon: Wrench,
-      title: 'Process Optimization',
-      description: 'Audit existing workflows, identify bottlenecks, and redesign processes for maximum efficiency and scalability.',
-    },
-    {
-      icon: TrendingUp,
-      title: 'Scalable Infrastructure',
-      description: 'Build automation systems that grow with your business, handling increasing complexity without breaking a sweat.',
-    },
-  ];
+const services = [
+  {
+    icon: Workflow,
+    title: 'Workflow Automation',
+    description:
+      'We design end-to-end automations that eliminate repetitive tasks, streamline operations, and keep your business running effortlessly 24/7.',
+  },
+  {
+    icon: Bot,
+    title: 'AI Agent Implementation',
+    description:
+      'We build intelligent AI agents that handle support, analysis, content, and operational tasks — boosting speed, accuracy, and productivity.',
+  },
+  {
+    icon: Link,
+    title: 'System Integrations',
+    description:
+      'We connect all your tools, apps, and platforms into one smooth ecosystem through secure integrations and custom automation bridges.',
+  },
+  {
+    icon: Database,
+    title: 'Automated Data Operations',
+    description:
+      'We create seamless data flows — from extraction to transformation — ensuring your data stays accurate, organized, and instantly accessible.',
+  },
+  {
+    icon: Wrench,
+    title: 'Process Optimization',
+    description:
+      'We analyze your workflows, identify inefficiencies, and implement high-impact improvements that save time and reduce operational costs.',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Scalable Automation Systems',
+    description:
+      'We build automation infrastructures designed to scale with your business—no downtime, no bottlenecks, just reliable growth.',
+  },
+];
+
 
   return (
     <section id="services" className="py-24 bg-gray-50 dark:bg-black">
@@ -44,9 +51,10 @@ export default function Services() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 mb-6">
             Our Services
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Comprehensive automation solutions powered by n8n and cutting-edge AI technology
-          </p>
+        <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Smart automation and AI solutions tailored to help businesses work faster, smarter, and at scale — without complexity.
+        </p>
+
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
