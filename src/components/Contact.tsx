@@ -104,10 +104,10 @@ export default function Contact() {
                   <div>
                     <div className="font-semibold text-white mb-1">Email</div>
                     <a
-                      href="mailto:hello@udohive.com"
+                      href="mailto:udohive.ai@gmail.com"
                       className="text-gray-300 hover:text-yellow-400 transition-colors"
                     >
-                      udohive@gmail.com
+                      udohive.ai@gmail.com
                     </a>
                   </div>
                 </div>
