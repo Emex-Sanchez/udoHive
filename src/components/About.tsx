@@ -61,13 +61,12 @@ export default function About() {
             <div className="relative bg-gray-900 dark:bg-black p-12 border-4 border-yellow-400">
               <h3 className="text-2xl font-bold text-white mb-6">Our Vision</h3>
               <p className="text-gray-300 leading-relaxed mb-6">
-                To be the leading automation agency showcasing African excellence in technology,
-                delivering world-class workflow systems that empower businesses to operate smarter,
-                faster, and more efficiently.
+                To lead the creation of intelligent systems that power efficient, scalable, and sustainable businesses.
+
               </p>
               <div className="border-t-2 border-yellow-400 pt-6">
                 <p className="text-yellow-400 font-bold text-lg">
-                  "Innovation without borders. Excellence without compromise."
+                  "Automate. Accelerate. Thrive."
                 </p>
               </div>
             </div>
