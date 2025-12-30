@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 import AfricanPattern from './AfricanPattern';
 
 export default function Contact() {
@@ -22,75 +22,17 @@ export default function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          <div>
-            <form className="space-y-6">
-              <div>
-                <label className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:border-yellow-400 focus:outline-none transition-colors"
-                  placeholder="Your name"
-                />
-              </div>
+          
+   <div className="w-full rounded-lg">
+  <iframe
+    src="https://n8n.srv1176903.hstgr.cloud/form/1463b628-9424-4a56-a444-7f6a8536f7ae"
+    title="Contact Form"
+    className="w-full h-[1200px] md:h-[1000px] lg:h-[900px] border-none bg-transparent"
+  ></iframe>
+</div>
 
-              <div>
-                <label className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:border-yellow-400 focus:outline-none transition-colors"
-                  placeholder="your@email.com"
-                />
-              </div>
 
-              <div>
-                <label className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                  Company Name
-                </label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:border-yellow-400 focus:outline-none transition-colors"
-                  placeholder="Your company"
-                />
-              </div>
-
-              <div>
-                <label className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                  Service Interested In
-                </label>
-                <select className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:border-yellow-400 focus:outline-none transition-colors">
-                  <option>Workflow Automation</option>
-                  <option>AI Agent Development</option>
-                  <option>System Integrations</option>
-                  <option>Data Pipeline Automation</option>
-                  <option>Process Optimization</option>
-                  <option>Not Sure Yet</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-                  Tell Us About Your Project
-                </label>
-                <textarea
-                  rows={5}
-                  className="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:border-yellow-400 focus:outline-none transition-colors resize-none"
-                  placeholder="Describe what you want to automate..."
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-yellow-400 text-gray-900 py-4 font-bold text-lg flex items-center justify-center hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105"
-              >
-                Send Message
-                <Send className="ml-2 w-5 h-5" />
-              </button>
-            </form>
-          </div>
+          
 
           <div className="space-y-8">
             <div className="bg-gray-900 dark:bg-black p-8 border-l-8 border-yellow-400">
