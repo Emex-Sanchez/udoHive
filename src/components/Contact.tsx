@@ -3,38 +3,37 @@ import AfricanPattern from './AfricanPattern';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-white dark:bg-gray-900 relative overflow-hidden">
+    <section id="contact" className="bg-gray-900 dark:bg-black relative overflow-hidden">
+      {/* Background pattern */}
       <div className="absolute bottom-0 left-0 w-1/2 h-full opacity-5">
         <AfricanPattern />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="text-center mb-16">
+      <div className="max-w-7xl mx-auto relative px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-8">
           <span className="text-yellow-400 font-bold text-sm tracking-wider">
             GET IN TOUCH
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mt-4 mb-4">
             Let's Automate Your Business
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Ready to transform your operations? Book a free consultation and discover how automation can scale your business.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          
-<div className="w-full rounded-lg m-0 p-0" style={{ overflow: 'hidden' }}>
-  <iframe
-    src="https://n8n.srv1176903.hstgr.cloud/form/1463b628-9424-4a56-a444-7f6a8536f7ae"
-    title="Contact Form"
-    className="w-full h-[800px] md:h-[550px] lg:h-[400px] border-none bg-transparent m-0 p-0"
-  ></iframe>
-</div>
+        <div className="grid lg:grid-cols-2 gap-0">
+          {/* n8n Form */}
+          <div className="w-full m-0 p-0 rounded-lg overflow-hidden">
+            <iframe
+              src="https://n8n.srv1176903.hstgr.cloud/form/1463b628-9424-4a56-a444-7f6a8536f7ae"
+              title="Contact Form"
+              className="w-full h-[900px] md:h-[800px] lg:h-[700px] border-none bg-transparent m-0 p-0"
+            ></iframe>
+          </div>
 
-
-
-          
-
+          {/* Contact Info & Audit */}
           <div className="space-y-8">
             <div className="bg-gray-900 dark:bg-black p-8 border-l-8 border-yellow-400">
               <h3 className="text-2xl font-bold text-white mb-6">
