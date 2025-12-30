@@ -23,7 +23,7 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           
-   <div className="w-full rounded-lg">
+   <div className="w-full rounded-lg" style={{ overflow: 'hidden' }}>
   <iframe
     src="https://n8n.srv1176903.hstgr.cloud/form/1463b628-9424-4a56-a444-7f6a8536f7ae"
     title="Contact Form"
