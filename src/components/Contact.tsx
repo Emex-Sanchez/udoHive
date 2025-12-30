@@ -27,7 +27,7 @@ export default function Contact() {
   <iframe
     src="https://n8n.srv1176903.hstgr.cloud/form/1463b628-9424-4a56-a444-7f6a8536f7ae"
     title="Contact Form"
-    className="w-full h-[600px] md:h-[500px] lg:h-[450px] border-none bg-transparent m-0 p-0"
+    className="w-full h-[800px] md:h-[550px] lg:h-[400px] border-none bg-transparent m-0 p-0"
   ></iframe>
 </div>
 
