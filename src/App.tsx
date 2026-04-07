@@ -20,7 +20,7 @@ function App() {
         <Hero />
         <About />
         <Services />
-        <Portfolio />
+        {/* <Portfolio /> */}
         <TechStack />
         <Testimonials />
         <Pricing />

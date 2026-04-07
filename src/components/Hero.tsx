@@ -53,20 +53,6 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="mt-12 flex items-center space-x-8 text-white">
-              <div>
-                <div className="text-4xl font-bold text-yellow-400">100+</div>
-                <div className="text-sm text-gray-400">Systems Deployed</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-yellow-400">50+</div>
-                <div className="text-sm text-gray-400">Businesses Served</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-yellow-400">24/7</div>
-                <div className="text-sm text-gray-400">Intelligent Operations</div>
-              </div>
-            </div>
           </div>
 
           <div className="relative animate-fade-in-right">

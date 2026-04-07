@@ -25,12 +25,30 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-0">
           {/* n8n Form */}
-          <div className="w-full m-0 p-0 rounded-lg overflow-hidden">
-            <iframe
-              src="https://n8n.srv1176903.hstgr.cloud/form/1463b628-9424-4a56-a444-7f6a8536f7ae"
-              title="Contact Form"
-              className="w-full h-[900px] md:h-[800px] lg:h-[700px] border-none bg-transparent m-0 p-0"
-            ></iframe>
+        <div className="flex items-center justify-center">
+            <div className="bg-gray-800/50 backdrop-blur-sm p-12 border-2 border-yellow-400/30 text-center max-w-md w-full">
+              
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Start Your Automation Journey
+              </h3>
+
+              <p className="text-gray-300 mb-8">
+                Tell us about your business and we’ll identify opportunities to automate and scale your operations.
+              </p>
+
+              <a
+                href="https://forms.gle/YOUR_GOOGLE_FORM_LINK"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-yellow-400 text-gray-900 px-8 py-4 font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105"
+              >
+                Fill Out Form
+              </a>
+
+              <p className="text-sm text-gray-500 mt-4">
+                Takes less than 2 minutes
+              </p>
+            </div>
           </div>
 
           {/* Contact Info & Audit */}

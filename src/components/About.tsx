@@ -58,18 +58,35 @@ export default function About() {
 
           <div className="relative">
             <div className="absolute inset-0 bg-yellow-400/10 transform rotate-3" />
-            <div className="relative bg-gray-900 dark:bg-black p-12 border-4 border-yellow-400">
-              <h3 className="text-2xl font-bold text-white mb-6">Our Vision</h3>
-              <p className="text-gray-300 leading-relaxed mb-6">
-                To lead the creation of intelligent systems that power efficient, scalable, and sustainable businesses.
+            <div className="relative bg-gray-900 dark:bg-black p-12 border-4 border-yellow-400 space-y-10">
 
-              </p>
-              <div className="border-t-2 border-yellow-400 pt-6">
-                <p className="text-yellow-400 font-bold text-lg">
-                  "Automate. Accelerate. Thrive."
-                </p>
-              </div>
-            </div>
+              {/* Mission */}
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      Our mission is to build world-class automation tools that empower individuals and organizations to work smarter, faster and more efficiently.
+                    </p>
+                  </div>
+
+                  {/* Divider */}
+                  <div className="border-t border-yellow-400/30" />
+
+                  {/* Vision */}
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-4">Our Vision</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      Our Vision is to create a world where technology and automation make work effortless and efficient.
+                    </p>
+                  </div>
+
+                  {/* Tagline */}
+                  <div className="border-t-2 border-yellow-400 pt-6">
+                    <p className="text-yellow-400 font-bold text-lg">
+                      "Automate. Optimize. Scale."
+                    </p>
+                  </div>
+
+                </div>
           </div>
 
         </div>
