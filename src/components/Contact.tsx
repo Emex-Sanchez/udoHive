@@ -37,7 +37,7 @@ export default function Contact() {
               </p>
 
               <a
-                href="https://forms.gle/YOUR_GOOGLE_FORM_LINK"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScqcIFy-CMuuiql5-_FvlAyibO5yzwmwT4ng5QikBiubwEVEA/viewform?usp=publish-editor"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-yellow-400 text-gray-900 px-8 py-4 font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105"
