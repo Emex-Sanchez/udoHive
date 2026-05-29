@@ -1,94 +1,103 @@
-import { Workflow, Bot, Link, Database, Wrench, TrendingUp } from 'lucide-react';
+import React from 'react';
+import { Lightbulb, Code2, CreditCard, ShieldCheck, Zap, Layers, LucideIcon } from 'lucide-react';
 
-export default function Services() {
-const services = [
-  {
-    icon: Workflow,
-    title: 'Workflow Automation',
-    description:
-      'We design end-to-end automations that eliminate repetitive tasks, streamline operations, and keep your business running effortlessly 24/7.',
-  },
-  {
-    icon: Bot,
-    title: 'AI Agent Implementation',
-    description:
-      'We build intelligent AI agents that handle support, analysis, content, and operational tasks — boosting speed, accuracy, and productivity.',
-  },
-  {
-    icon: Link,
-    title: 'System Integrations',
-    description:
-      'We connect all your tools, apps, and platforms into one smooth ecosystem through secure integrations and custom automation bridges.',
-  },
-  {
-    icon: Database,
-    title: 'Automated Data Operations',
-    description:
-      'We create seamless data flows — from extraction to transformation — ensuring your data stays accurate, organized, and instantly accessible.',
-  },
-  {
-    icon: Wrench,
-    title: 'Process Optimization',
-    description:
-      'We analyze your workflows, identify inefficiencies, and implement high-impact improvements that save time and reduce operational costs.',
-  },
-  {
-    icon: TrendingUp,
-    title: 'Scalable Automation Systems',
-    description:
-      'We build automation infrastructures designed to scale with your business—no downtime, no bottlenecks, just reliable growth.',
-  },
-];
+interface StudioCapability {
+  id: number;
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}
 
+export default function Services(): React.JSX.Element {
+  const capabilities: StudioCapability[] = [
+    {
+      id: 1,
+      icon: Lightbulb,
+      title: 'Internal Venture Ideation',
+      description: 'We actively track regional market operational gaps, workflow bottlenecks, and shifts in LLM models to invent unique software concepts from scratch.',
+    },
+    {
+      id: 2,
+      icon: Code2,
+      title: 'Rapid Agent Prototyping',
+      description: 'Our in-house engineering squad rapidly ships high-utility Minimum Viable Products—turning advanced AI logic into ready-to-use software features in weeks.',
+    },
+    {
+      id: 3,
+      icon: CreditCard,
+      title: 'Frictionless Payment Routing',
+      description: 'We integrate modular web architectures using Paystack and Flutterwave, enabling single-transaction pay-per-export capabilities with no user registration.',
+    },
+    {
+      id: 4,
+      icon: ShieldCheck,
+      title: 'Enterprise Architecture Hardening',
+      description: 'We build resilient cloud layers with secure user authentication, team nodes, and database architectures for products scaled into subscription models.',
+    },
+    {
+      id: 5,
+      icon: Zap,
+      title: 'Localized Context Fine-Tuning',
+      description: 'We prompt-engineer and coordinate Gemini and Claude models to deeply process regional African workflows, business syntax, currencies, and corporate data layouts.',
+    },
+    {
+      id: 6,
+      icon: Layers,
+      title: 'Venture Capital Spin-Outs',
+      description: 'Once an internal tool validates its user base and generates transaction volume, we provision seed infrastructure and spin it out into an independent business.',
+    },
+  ];
 
   return (
-    <section id="services" className="py-24 bg-gray-50 dark:bg-black">
+    <section id="services" className="py-24 bg-gray-50 dark:bg-black border-t border-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-yellow-400 font-bold text-sm tracking-wider">
-            WHAT WE DO
+          <span className="text-yellow-400 font-bold text-sm tracking-wider uppercase">
+            Studio Engine
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 mb-6">
-            Our Services
+            How We Build Ventures
           </h2>
-        <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Smart automation and AI solutions tailored to help businesses work faster, smarter, and at scale — without complexity.
-        </p>
-
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            UdoHive operates a predictable, systematic company assembly line optimized for building software utilities across Africa.
+          </p>
         </div>
 
+        {/* Studio Capabilities Layout Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => {
-            const Icon = service.icon;
+          {capabilities.map((capability) => {
+            const IconComponent = capability.icon;
             return (
-              <div
-                key={index}
-                className="group bg-white dark:bg-gray-900 p-8 border-2 border-gray-200 dark:border-gray-800 hover:border-yellow-400 dark:hover:border-yellow-400 transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+              <div 
+                key={capability.id} 
+                className="group bg-white dark:bg-gray-900 p-8 border-2 border-gray-200 dark:border-gray-800/80 hover:border-yellow-400 dark:hover:border-yellow-400 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 rounded-xl flex flex-col"
               >
-                <div className="w-16 h-16 bg-yellow-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Icon className="w-8 h-8 text-gray-900" />
+                <div className="w-16 h-16 bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-yellow-400 transition-all duration-300 rounded-lg">
+                  <IconComponent className="w-8 h-8 text-yellow-400 group-hover:text-gray-900 transition-colors" />
                 </div>
-
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                  {service.title}
+                  {capability.title}
                 </h3>
-
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  {service.description}
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+                  {capability.description}
                 </p>
               </div>
             );
           })}
         </div>
 
+        {/* Lower Call-to-Action Link */}
         <div className="mt-16 text-center">
-          <a
-            href="#contact"
-            className="inline-block bg-yellow-400 text-gray-900 px-10 py-4 font-bold text-lg hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105"
+          <a 
+            href="#pipelines" 
+            className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-10 py-4 font-bold text-lg rounded-xl transition-all duration-300 transform hover:scale-105 shadow-md shadow-yellow-400/5"
           >
-            Get Started with Automation
+            Launch an Active Venture Agent
           </a>
         </div>
+
       </div>
     </section>
   );

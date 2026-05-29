@@ -9,7 +9,7 @@ import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
-import WhatsAppButton from './components/WhatsAppButton';
+// import WhatsAppButton from './components/WhatsAppButton';
 import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
@@ -20,14 +20,14 @@ function App() {
         <Hero />
         <About />
         <Services />
-        {/* <Portfolio /> */}
+        <Portfolio />
         <TechStack />
         <Testimonials />
-        <Pricing />
+        {/* <Pricing /> */}
         {/* <AIAgentsLibrary /> */}
         <FAQ />
         <Contact />
-        <WhatsAppButton />
+        {/* <WhatsAppButton /> */}
       </div>
     </ThemeProvider>
   );

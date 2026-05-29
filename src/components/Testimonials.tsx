@@ -1,74 +1,82 @@
-import { Search, Settings, Rocket, BarChart } from 'lucide-react';
+import React from 'react';
+import { Lightbulb, Code2, ShieldAlert, Rocket, LucideIcon } from 'lucide-react';
 
-export default function Process() {
-  const steps = [
+interface HatchingStep {
+  id: number;
+  title: string;
+  description: string;
+  icon: LucideIcon;
+}
+
+export default function Process(): React.JSX.Element {
+  const steps: HatchingStep[] = [
     {
-      title: "Discovery & Audit",
-      description:
-        "We analyze your current workflows, identify bottlenecks, and uncover automation opportunities in your business.",
-      icon: Search,
+      id: 1,
+      title: "Identify Workflow Friction",
+      description: "We analyze high-frequency corporate tasks, business communication bottlenecks, and repetitive academic workflows across Africa to locate structural automation opportunities.",
+      icon: Lightbulb,
     },
     {
-      title: "System Design",
-      description:
-        "We design a custom automation system tailored to your operations, tools, and growth goals.",
-      icon: Settings,
+      id: 2,
+      title: "Rapid Agent Prototyping",
+      description: "Our core studio engineering squad builds a high-utility, functional Minimum Viable Product inside weeks—leveraging state-of-the-art models like Gemini and Claude API.",
+      icon: Code2,
     },
     {
-      title: "Build & Integration",
-      description:
-        "We develop and integrate your automation workflows, connecting all your tools into one seamless system.",
+      id: 3,
+      title: "Frictionless Deployment",
+      description: "We strip out registration barriers. The app is launched via a secure pay-per-export architecture using localized Paystack payment flows directly in-browser.",
+      icon: ShieldAlert,
+    },
+    {
+      id: 4,
+      title: "Studio Scale & Spin-Out",
+      description: "Once a tool validates transaction velocity, we structure its enterprise subscription modules, establish permanent databases, and spin it out into an independent venture.",
       icon: Rocket,
-    },
-    {
-      title: "Optimize & Scale",
-      description:
-        "We monitor performance, refine processes, and help you scale efficiently with continuous improvements.",
-      icon: BarChart,
     },
   ];
 
   return (
-    <section id="process" className="py-24 bg-white dark:bg-gray-900">
+    <section id="process" className="py-24 bg-white dark:bg-black border-t border-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        {/* Header */}
+        
+        {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-yellow-400 font-bold text-sm tracking-wider">
-            HOW WE WORK
+          <span className="text-yellow-400 font-bold text-sm tracking-wider uppercase">
+            The Company Factory
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 mb-6">
-            Our Automation Process
+            Our Venture Hatching Process
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A simple, proven system to transform your business operations
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            How UdoHive conceptualizes, builds, and deploys scalable micro utilities and enterprise systems.
           </p>
         </div>
 
-        {/* Steps */}
+        {/* Steps Loop Layout Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => {
-            const Icon = step.icon;
-
+            const IconComponent = step.icon;
             return (
-              <div
-                key={index}
-                className="relative bg-gray-50 dark:bg-gray-800 p-8 border-t-4 border-yellow-400 hover:shadow-xl transition-all duration-300"
+              <div 
+                key={step.id} 
+                className="relative bg-gray-50 dark:bg-gray-900/40 p-8 border-t-4 border-yellow-400 rounded-b-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 backdrop-blur-sm flex flex-col pt-12"
               >
-                {/* Step Number */}
-                <div className="absolute -top-4 left-6 bg-yellow-400 text-gray-900 font-bold px-3 py-1 text-sm">
+                {/* Visual Step Counter Number Card */}
+                <div className="absolute -top-4 left-6 bg-yellow-400 text-gray-900 font-extrabold px-3 py-1 text-xs tracking-wider rounded-sm select-none shadow-sm">
                   {`0${index + 1}`}
                 </div>
 
-                {/* Icon */}
-                <Icon className="w-10 h-10 text-yellow-400 mb-4" />
+                {/* Vector Layout Container Icon */}
+                <div className="w-12 h-12 bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center rounded-lg mb-4">
+                  <IconComponent className="w-6 h-6 text-yellow-400" />
+                </div>
 
-                {/* Content */}
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                {/* Text Context Items */}
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 tracking-tight">
                   {step.title}
                 </h3>
-
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">
                   {step.description}
                 </p>
               </div>
