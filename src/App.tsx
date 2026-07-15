@@ -1,33 +1,27 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Services from './components/Services';
 import Portfolio from './components/Portfolio';
-import TechStack from './components/TechStack';
-import Testimonials from './components/Testimonials';
-// import AIAgentsLibrary from './components/product';
-import Pricing from './components/Pricing';
-import FAQ from './components/FAQ';
+import Industries from './components/Industries';
+import MissionVision from './components/MissionVision';
 import Contact from './components/Contact';
-// import WhatsAppButton from './components/WhatsAppButton';
+import Footer from './components/Footer';
 import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen transition-colors duration-300">
+      <div className="min-h-screen bg-white text-gray-900 transition-colors duration-300 dark:bg-black dark:text-white">
         <Navbar />
-        <Hero />
-        <About />
-        <Services />
-        <Portfolio />
-        <TechStack />
-        <Testimonials />
-        {/* <Pricing /> */}
-        {/* <AIAgentsLibrary /> */}
-        <FAQ />
-        <Contact />
-        {/* <WhatsAppButton /> */}
+        <main>
+          <Hero />
+          <About />
+          <Portfolio />
+          <Industries />
+          <MissionVision />
+          <Contact />
+        </main>
+        <Footer />
       </div>
     </ThemeProvider>
   );

@@ -1,106 +1,56 @@
 import React from 'react';
-import { ArrowRight, Mail } from 'lucide-react';
+import { ArrowRight, Mail, Cpu } from 'lucide-react';
 import AfricanPattern from './AfricanPattern';
 
-interface TrackItem {
-  id: number;
-  icon: string;
-  title: string;
-  description: string;
-  colorClass: string;
-}
-
 export default function Hero(): React.JSX.Element {
-  const ecosystemTracks: TrackItem[] = [
-    { 
-      id: 1, 
-      icon: '⚡', 
-      title: 'Micro Automation Pipeline', 
-      description: 'Single-action tools. No registration required. Local pay-per-export billing models.', 
-      colorClass: 'bg-yellow-400' 
-    },
-    { 
-      id: 2, 
-      icon: '🏢', 
-      title: 'Enterprise Core Workflows', 
-      description: 'Multi-user authentication, continuous database syncing, and monthly subscription tiers.', 
-      colorClass: 'bg-amber-500' 
-    }
-  ];
-
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-gray-900 dark:bg-black overflow-hidden">
-      {/* Background Graphic Patterns */}
+    <section id="home" className="relative flex min-h-screen items-center overflow-hidden bg-gray-900 dark:bg-black">
       <div className="absolute inset-0 opacity-10">
         <AfricanPattern />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/5 via-transparent to-transparent" />
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
-          {/* Left Column: Core Studio Value Proposition */}
-          <div className="animate-fade-in-up">
-            <div className="inline-block mb-6">
-              <span className="bg-yellow-400 text-gray-900 px-4 py-2 font-bold text-sm tracking-wider uppercase">
-                Automation Venture Studio
-              </span>
+      <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/10 via-transparent to-transparent" />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-4 py-28 sm:px-6 lg:px-8 lg:py-32">
+        <div className="max-w-3xl">
+          <div className="mb-6 inline-flex items-center rounded-full border border-yellow-400/30 bg-yellow-400/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-yellow-400">
+            Automation Engineering Company
+          </div>
+          <h1 className="mb-6 text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+            We engineer intelligent automation infrastructure for modern industries.
+          </h1>
+          <p className="mb-8 text-lg leading-relaxed text-gray-300">
+            UdoHive builds software products and automation systems that improve how businesses operate at scale.
+          </p>
+          <div className="flex flex-col gap-4 sm:flex-row">
+            <a
+              href="#products"
+              className="group flex items-center justify-center rounded-xl bg-yellow-400 px-7 py-4 text-lg font-semibold text-gray-900 transition-all duration-300 hover:bg-yellow-300"
+            >
+              Explore our products
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </a>
+            <a
+              href="mailto:udohive.ai@gmail.com"
+              className="group flex items-center justify-center rounded-xl border border-yellow-400/60 px-7 py-4 text-lg font-semibold text-yellow-400 transition-all duration-300 hover:bg-yellow-400 hover:text-gray-900"
+            >
+              <Mail className="mr-2 h-5 w-5" /> Contact us
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-14 rounded-3xl border border-gray-800 bg-gray-800/70 p-8 shadow-2xl backdrop-blur-sm sm:max-w-2xl">
+          <div className="flex items-center gap-3">
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-yellow-400/10 text-yellow-400">
+              <Cpu className="h-6 w-6" />
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              We Build Task <br />
-              <span className="text-yellow-400">Automation</span> <br />
-              With Zero Friction.
-            </h1>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              UdoHive engineers specialized AI agents and enterprise workflows for Africa. No accounts. No monthly subscriptions. Try our micro tools completely free and pay in Naira only when you export your results.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="#pipelines" 
-                className="group bg-yellow-400 text-gray-900 px-8 py-4 font-bold text-lg flex items-center justify-center hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105"
-              >
-                Explore Active Ventures
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
-              <a 
-                href="mailto:udohive.ai@gmail.com" 
-                className="group border-2 border-yellow-400 text-yellow-400 px-8 py-4 font-bold text-lg flex items-center justify-center hover:bg-yellow-400 hover:text-gray-900 transition-all duration-300"
-              >
-                <Mail className="mr-2 w-5 h-5" /> Contact Studio Desk
-              </a>
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-yellow-400">What we build</p>
+              <h2 className="text-xl font-semibold text-white">Product-grade automation systems with long-term impact.</h2>
             </div>
           </div>
-
-          {/* Right Column: Visual Component Explaining the Two Tiers */}
-          <div className="relative animate-fade-in-right">
-            <div className="absolute -inset-4 bg-yellow-400/20 blur-3xl" />
-            <div className="relative bg-gray-800/50 backdrop-blur-sm p-8 border-2 border-yellow-400/30">
-              <h3 className="text-sm font-bold text-yellow-400 uppercase tracking-widest mb-6">Active Ecosystem Tracks</h3>
-              <div className="space-y-6">
-                
-                {/* Typed mapping of tracking tracks */}
-                {ecosystemTracks.map((track) => (
-                  <div key={track.id} className="flex items-start space-x-4 p-3 bg-gray-900/40 border border-gray-800 rounded">
-                    <div className={`w-3 h-3 ${track.colorClass} mt-1.5 flex-shrink-0`} />
-                    <div>
-                      <h4 className="font-bold text-white text-sm">
-                        <span className="mr-1.5">{track.icon}</span>
-                        {track.title}
-                      </h4>
-                      <p className="text-xs text-gray-400 mt-1">{track.description}</p>
-                    </div>
-                  </div>
-                ))}
-
-              </div>
-              <div className="mt-8 text-center">
-                <div className="inline-block bg-yellow-400 text-gray-900 px-6 py-3 font-bold text-sm tracking-wide">
-                  No Commitment. Instant Execution.
-                </div>
-              </div>
-            </div>
-          </div>
-
+          <p className="mt-4 text-sm leading-relaxed text-gray-400">
+            From intelligent infrastructure to operational software, UdoHive is focused on building durable technology that helps businesses operate with greater precision and control.
+          </p>
         </div>
       </div>
     </section>

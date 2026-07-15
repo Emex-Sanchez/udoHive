@@ -17,11 +17,8 @@ export default function Navbar() {
   const navLinks = [
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
-    { href: '#services', label: 'Services' },
-    { href: '#portfolio', label: 'Portfolio' },
-    { href: '#pricing', label: 'Pricing' },
-    // { href: '#ai-agents', label: 'Products' },
-    { href: '#faq', label: 'FAQ' },
+    { href: '#products', label: 'Products' },
+    { href: '#industries', label: 'Industries' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -29,55 +26,46 @@ export default function Navbar() {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg'
+          ? 'bg-white/95 shadow-sm backdrop-blur-sm dark:bg-gray-900/95'
           : 'bg-transparent'
       }`}
     >
-      <div className="absolute inset-0 opacity-5 pointer-events-none -z-10">
+      <div className="absolute inset-0 -z-10 opacity-5 pointer-events-none">
         <AfricanPattern />
       </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="flex justify-between items-center h-20">
-          <div className="flex items-center space-x-2">
-            <img 
-              src="/logo/udohivewhite.png" // replace with your logo path
-              alt="udoHive Logo" 
-              className="h-6 sm:h-8 md:h-10 w-auto" 
-            />
-          </div>
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <a href="#home" className="flex items-center space-x-2">
+          <img src="/logo/udohivewhite.png" alt="UdoHive logo" className="h-6 w-auto sm:h-8 md:h-10" />
+        </a>
 
-          <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-gray-700 dark:text-gray-300 hover:text-yellow-400 dark:hover:text-yellow-400 transition-colors duration-300 font-medium"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-
-          <div className="md:hidden flex items-center space-x-4">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 dark:text-white"
+        <div className="hidden items-center space-x-8 md:flex">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="font-medium text-gray-700 transition-colors duration-300 hover:text-yellow-400 dark:text-gray-300 dark:hover:text-yellow-400"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
+              {link.label}
+            </a>
+          ))}
+        </div>
+
+        <div className="flex items-center space-x-4 md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700 dark:text-white" aria-label="Toggle menu">
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 relative z-40">
-          <div className="px-4 py-6 space-y-4">
+        <div className="relative z-40 border-t border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900 md:hidden">
+          <div className="space-y-4 px-4 py-6">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-gray-700 dark:text-gray-300 hover:text-yellow-400 dark:hover:text-yellow-400 transition-colors font-medium"
+                className="block font-medium text-gray-700 transition-colors hover:text-yellow-400 dark:text-gray-300 dark:hover:text-yellow-400"
               >
                 {link.label}
               </a>
