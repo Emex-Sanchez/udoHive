@@ -15,10 +15,10 @@ export default function Portfolio(): React.JSX.Element {
     {
       id: 1,
       icon: BarChart3,
-      title: 'Metys AI',
-      description: 'Metys AI uses intelligence to discover, score, and organize B2B leads so you spend less time searching and more time closing.',
-      tag: 'Intelligence leads',
-      badge: 'Live',
+      title: 'StockBud',
+      description: 'An intelligent inventory and retail operations platform that helps businesses monitor stock movement, manage replenishment, and automate retail workflows.',
+      tag: 'Retail operations',
+      badge: 'In development',
     },
     {
       id: 2,
@@ -69,7 +69,7 @@ export default function Portfolio(): React.JSX.Element {
                 <h3 className="mt-3 text-2xl font-semibold text-gray-900 dark:text-white">{product.title}</h3>
                 <p className="mt-4 flex-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">{product.description}</p>
 
-                <a href="https://www.leadgenudohive.xyz/" className="mt-8 inline-flex items-center font-semibold text-yellow-400 transition-colors hover:text-yellow-300">
+                <a href="#contact" className="mt-8 inline-flex items-center font-semibold text-yellow-400 transition-colors hover:text-yellow-300">
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
