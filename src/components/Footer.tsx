@@ -29,7 +29,7 @@ export default function Footer(): React.JSX.Element {
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-yellow-400">Products</h3>
             <ul className="mt-4 space-y-3 text-sm text-gray-600 dark:text-gray-400">
-              <li>StockBud</li>
+              <li>Metys AI</li>
               <li>HiveVision</li>
               <li>ScoutBee</li>
             </ul>
