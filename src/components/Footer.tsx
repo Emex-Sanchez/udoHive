@@ -31,7 +31,7 @@ export default function Footer(): React.JSX.Element {
             <ul className="mt-4 space-y-3 text-sm text-gray-600 dark:text-gray-400">
               <li>StockBud</li>
               <li>HiveVision</li>
-              <li><a href="https://www.leadgenudohive.xyz" className="hover:text-yellow-400" >Metys AI</a></li>
+              <li>ScoutBee</li>
             </ul>
           </div>
 
@@ -48,13 +48,13 @@ export default function Footer(): React.JSX.Element {
               </li>
             </ul>
             <div className="mt-6 flex items-center gap-3">
-              <a href="https://www.linkedin.com/company/udohive1/" target="_blank" rel="noreferrer" className="rounded-full border border-gray-200 p-2 text-gray-600 transition-colors hover:border-yellow-400 hover:text-yellow-400 dark:border-gray-800 dark:text-gray-400">
+              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="rounded-full border border-gray-200 p-2 text-gray-600 transition-colors hover:border-yellow-400 hover:text-yellow-400 dark:border-gray-800 dark:text-gray-400">
                 <Linkedin className="h-4 w-4" />
               </a>
-              <a href="https://www.instagram.com/udohive?igsi=MXVqMXV3bmdjOXJtcQ==" target="_blank" rel="noreferrer" className="rounded-full border border-gray-200 p-2 text-gray-600 transition-colors hover:border-yellow-400 hover:text-yellow-400 dark:border-gray-800 dark:text-gray-400">
+              <a href="https://www.instagram.com" target="_blank" rel="noreferrer" className="rounded-full border border-gray-200 p-2 text-gray-600 transition-colors hover:border-yellow-400 hover:text-yellow-400 dark:border-gray-800 dark:text-gray-400">
                 <Instagram className="h-4 w-4" />
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61584756130743" target="_blank" rel="noreferrer" className="rounded-full border border-gray-200 p-2 text-gray-600 transition-colors hover:border-yellow-400 hover:text-yellow-400 dark:border-gray-800 dark:text-gray-400">
+              <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="rounded-full border border-gray-200 p-2 text-gray-600 transition-colors hover:border-yellow-400 hover:text-yellow-400 dark:border-gray-800 dark:text-gray-400">
                 <Facebook className="h-4 w-4" />
               </a>
             </div>
