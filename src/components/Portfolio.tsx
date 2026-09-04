@@ -31,10 +31,10 @@ export default function Portfolio(): React.JSX.Element {
     {
       id: 3,
       icon: ScanSearch,
-      title: 'ScoutBee',
+      title: 'Metys AI',
       description: 'An AI-powered B2B lead intelligence platform that discovers, qualifies, and organizes high-quality business leads from across the web, helping companies find customers faster.',
       tag: 'Lead intelligence',
-      badge: 'In development',
+      badge: 'LIVE',
     },
   ];
 
@@ -69,7 +69,7 @@ export default function Portfolio(): React.JSX.Element {
                 <h3 className="mt-3 text-2xl font-semibold text-gray-900 dark:text-white">{product.title}</h3>
                 <p className="mt-4 flex-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">{product.description}</p>
 
-                <a href="#contact" className="mt-8 inline-flex items-center font-semibold text-yellow-400 transition-colors hover:text-yellow-300">
+                <a href="https://www.leadgenudohive.xyz" className="mt-8 inline-flex items-center font-semibold text-yellow-400 transition-colors hover:text-yellow-300">
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
