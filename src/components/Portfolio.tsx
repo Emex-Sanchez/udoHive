@@ -1,11 +1,9 @@
 import React from 'react';
 import { ArrowRight, BarChart3, Compass, ScanSearch, LucideIcon } from 'lucide-react';
-import metysLogo from '../../public/logo/metys-Logo.png';
 
 interface ProductItem {
   id: number;
   icon: LucideIcon;
-  iconImage: string;
   title: string;
   description: string;
   tag: string;
@@ -32,11 +30,11 @@ export default function Portfolio(): React.JSX.Element {
     },
     {
       id: 3,
-      iconImage: metysLogo,
-      title: 'Metys AI',
+      icon: ScanSearch,
+      title: 'ScoutBee',
       description: 'An AI-powered B2B lead intelligence platform that discovers, qualifies, and organizes high-quality business leads from across the web, helping companies find customers faster.',
       tag: 'Lead intelligence',
-      badge: 'LIVE',
+      badge: 'In development',
     },
   ];
 
