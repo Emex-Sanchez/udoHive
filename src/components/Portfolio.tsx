@@ -8,6 +8,7 @@ interface ProductItem {
   description: string;
   tag: string;
   badge: string;
+  href: string;
 }
 
 export default function Portfolio(): React.JSX.Element {
@@ -19,6 +20,7 @@ export default function Portfolio(): React.JSX.Element {
       description: 'An intelligent inventory and retail operations platform that helps businesses monitor stock movement, manage replenishment, and automate retail workflows.',
       tag: 'Retail operations',
       badge: 'In development',
+      href: '#Contact',
     },
     {
       id: 2,
@@ -27,14 +29,16 @@ export default function Portfolio(): React.JSX.Element {
       description: 'An AI-powered geospatial intelligence platform that turns satellite imagery and spatial data into actionable insights for agriculture, infrastructure, security, and environmental monitoring.',
       tag: 'Geospatial intelligence',
       badge: 'In development',
+      href: '#',
     },
     {
       id: 3,
       icon: ScanSearch,
-      title: 'ScoutBee',
+      title: 'Metys AI',
       description: 'An AI-powered B2B lead intelligence platform that discovers, qualifies, and organizes high-quality business leads from across the web, helping companies find customers faster.',
       tag: 'Lead intelligence',
-      badge: 'In development',
+      badge: 'LIVE',
+      href: 'https://www.leadgenudohive.xyz'
     },
   ];
 
@@ -69,7 +73,8 @@ export default function Portfolio(): React.JSX.Element {
                 <h3 className="mt-3 text-2xl font-semibold text-gray-900 dark:text-white">{product.title}</h3>
                 <p className="mt-4 flex-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">{product.description}</p>
 
-                <a href="#contact" className="mt-8 inline-flex items-center font-semibold text-yellow-400 transition-colors hover:text-yellow-300">
+                <a href={product.href}
+                   {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})} className="mt-8 inline-flex items-center font-semibold text-yellow-400 transition-colors hover:text-yellow-300">
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
