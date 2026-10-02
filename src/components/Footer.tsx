@@ -31,7 +31,7 @@ export default function Footer(): React.JSX.Element {
             <ul className="mt-4 space-y-3 text-sm text-gray-600 dark:text-gray-400">
               <li>StockBud</li>
               <li>HiveVision</li>
-              <li><a href="https://www.leadgenudohive.xyz" className="hover:text-yellow-400" >Metys AI</a></li>
+              <li><a href="https://www.metysai.xyz/" className="hover:text-yellow-400" >Metys AI</a></li>
             </ul>
           </div>
 
