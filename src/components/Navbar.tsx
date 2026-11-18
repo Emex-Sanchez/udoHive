@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import AfricanPattern from './AfricanPattern';
+import PixelLogo from './pixel/PixelLogo';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,8 @@ export default function Navbar() {
       </div>
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="#home" className="flex items-center space-x-2">
-          <img src="/logo/udohivewhite.png" alt="UdoHive logo" className="h-6 w-auto sm:h-8 md:h-10" />
+          <PixelLogo size={6} className="pixelated" />
+          <span className="font-bold text-gray-900 sm:hidden dark:text-white">udoHive</span>
         </a>
 
         <div className="hidden items-center space-x-8 md:flex">
@@ -43,7 +45,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="font-medium text-gray-700 transition-colors duration-300 hover:text-yellow-400 dark:text-gray-300 dark:hover:text-yellow-400"
+              className="font-medium text-gray-700 transition-colors duration-300 hover:text-gray-400 dark:text-gray-300 dark:hover:text-white"
             >
               {link.label}
             </a>
@@ -65,7 +67,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block font-medium text-gray-700 transition-colors hover:text-yellow-400 dark:text-gray-300 dark:hover:text-yellow-400"
+                className="block font-medium text-gray-700 transition-colors hover:text-gray-400 dark:text-gray-300 dark:hover:text-white"
               >
                 {link.label}
               </a>
